@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interactive Wall Calendar (Frontend Engineering Challenge)
 
-## Getting Started
+A polished, responsive React/Next.js wall-calendar component inspired by a physical hanging calendar.
 
-First, run the development server:
+## What This Includes
+
+- Wall-calendar aesthetic with a prominent hero artwork panel.
+- Day range selection with distinct visual states:
+	- start date
+	- end date
+	- in-between highlighted dates
+- Integrated notes system:
+	- monthly notes
+	- per-day notes
+	- range notes linked to selected dates
+- Visual indicators on day cells when notes are present.
+- Local persistence via `localStorage` (no backend required).
+- Mobile-first responsive behavior with desktop and touch-friendly layouts.
+
+## Tech Choices
+
+- Next.js App Router + TypeScript
+- Client-side React state management
+- CSS Modules for custom visual design and animation
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Check
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Submission Links
 
-To learn more about Next.js, take a look at the following resources:
+- Source Code Repo: `ADD_YOUR_GITHUB_OR_GITLAB_LINK`
+- Video Demo (Required): `ADD_LOOM_OR_YOUTUBE_LINK`
+- Live Demo (Optional): `ADD_VERCEL_OR_NETLIFY_LINK`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## UX Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Click a date once to start range selection.
+- Click a later date to close the range.
+- Use the range notes box to attach meaning to the selected dates.
+- Tap any date and use Day Note to add date-specific detail.
+- Dots inside cells show if that date contains note data.
